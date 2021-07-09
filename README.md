@@ -95,6 +95,28 @@ class Gerente(nome: String, cpf: String, salario: Double) : Funcionario(nome, cp
 }
 ```
 ### Polimorfismo 
+Como não é possível herdar duas vezes, é onde entra o polimorfismo usando ```interface```, e toda **interface** é abstrata, não sendo necessário inclui-la. E também não há necessidade em informar "()" pois ela não precisa de construtor, ou de instânciar.
+
+#### Classe com interface
+```kotlin
+interface Login {
+    fun login(): Boolean
+}
+```
+
+#### Classe herdada
+```kotlin
+class Cliente(nome: String, cpf: String, val clienteEnum: ClienteEnum, val senha:String)
+    :Pessoa(nome, cpf),Login {
+    override fun login(): Boolean = "1234" == senha
+
+    override fun toString(): String = """
+        Nome: $nome
+        CPF: $cpf
+        Tipo: $clienteEnum
+        """.trimIndent()
+}
+```
 
 ## Fontes
 - [AndroidStudioOnline](https://play.kotlinlang.org/#eyJ2ZXJzaW9uIjoiMS41LjIwIiwicGxhdGZvcm0iOiJqYXZhIiwiYXJncyI6IiIsImpzQ29kZSI6IiIsIm5vbmVNYXJrZXJzIjp0cnVlLCJ0aGVtZSI6ImlkZWEiLCJjb2RlIjoiLyoqXG4gKiBZb3UgY2FuIGVkaXQsIHJ1biwgYW5kIHNoYXJlIHRoaXMgY29kZS4gXG4gKiBwbGF5LmtvdGxpbmxhbmcub3JnIFxuICovXG5cbmZ1biBtYWluKCkge1xuICAgIHByaW50bG4oXCJIZWxsbywgd29ybGQhISFcIilcbn0ifQ==)
