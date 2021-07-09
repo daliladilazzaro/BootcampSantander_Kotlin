@@ -6,7 +6,7 @@
 - Para variáveis que **não** podem ser alteradas, a não ser que vá até a raiz: **val**
 
 ### Exemplo de função 
-```
+``` kotlin
 class Pessoa {
     var nome:String="Lila"
     var cpf:String="123.456.789.90"
@@ -22,7 +22,8 @@ fun main (){
 ```
 
 Para informar uma classe dentro de uma classe: 
-``` inner class Endereco {
+``` Kotlin
+inner class Endereco {
         var rua:String="Rua exemplo"
     }
 ```
