@@ -9,8 +9,8 @@ fun main(){
    // println(pessoa.nome)
   //  println(pessoa.cpf)
 
-    val func=Funcionario("Carla Gimenez", "987.654.321-00", BigDecimal.valueOf(1500.00))
-    println(func.nome)
-    println(func.cpf)
-    println(func.salario)
+    //val func=Funcionario("Carla Gimenez", "987.654.321-00", BigDecimal.valueOf(1500.00))
+   // println(func.nome)
+   // println(func.cpf)
+  //  println(func.salario)
 }
