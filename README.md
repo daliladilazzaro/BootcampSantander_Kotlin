@@ -20,3 +20,10 @@ fun main (){
     print(lila.cpf)
 }
 ```
+
+Para informar uma classe dentro de uma classe: 
+``` inner class Endereco {
+        var rua:String="Rua exemplo"
+    }
+```
+Como vimos no exemplo que para a variável se tornal imutável utilizar **val**, podemo usar também ```private set``` abaixo da declaração de variáveis.   
