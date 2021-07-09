@@ -1,4 +1,4 @@
-# Exercícios do curso Santander Bootcamp de Mobile Developer - Kotlin
+# Curso Santander Bootcamp de Mobile Developer - Kotlin
 
 ### Conceitos básicos do Kotlin
 
