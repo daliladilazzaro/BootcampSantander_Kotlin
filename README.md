@@ -34,8 +34,9 @@ Os membros de uma classe são ***construtor primário ou secundário*** como ```
 
 As funções trabalham dentro da classe que abstrai algo do "mundo real", as funções permitem os objetos terem comportamentos, e as propriedades permitem terem um estado para quando instanciar ele tem a variavel no caso do exemplo acima "lila" que possui um comportamento que trás as informações dele. Esses são os membros de uma classe. 
 
-### Data Class
-O ***Data Class*** é uma classe que espera dados, ter informações para seguir a longo da aplicação. 
+### Tipo de Class
+- O ***Data Class*** é uma classe que espera dados, ter informações para seguir a longo da aplicação. 
+- O ***Enum Class*** é uma classe destinada para tipos dentro de uma função, por exemplo, para uma classe Cliente, existem dois parametros Pessoa Física e Juridica, ao invés de fazer apenas uma variavel destinada para isso, o que pode ocorrer muitas vezes erro em digitação, já temos nossos enuns que permite já sigras prontas para escolher. Permitindo também ```companion object``` que nos da a opção para funções estáticas, ou seja, via classe, e não via instância do objeto. 
 
 ### Alterar um tipo "Val"
 Como vimos, o tipo de variável ***val*** é imutável. Mas existe uma condição chamada **copy** que cria uma cópia de uma variável que contem ela, e pode ser alterada, conforme: 
