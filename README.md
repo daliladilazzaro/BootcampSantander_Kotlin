@@ -75,7 +75,7 @@ Diferente de uma classe ```abstract``` que não instancia, sua dinamica é difer
 Quando usamos ```abstract``` há momentos que também precisamos usar o ```protected``` fazendo que as classes mãe e filhas consigam fazer uso do argumento.
 
 #### Classe mãe
-```
+``` kotlin
 abstract class Funcionario( nome:String, cpf:String, val salario:Double): Pessoa(nome, cpf){
 protected abstract fun calculoAuxilio():Double
 
@@ -89,7 +89,7 @@ protected abstract fun calculoAuxilio():Double
 ```
 
 #### Classe filho
-```
+``` kotlin
 class Gerente(nome: String, cpf: String, salario: Double) : Funcionario(nome, cpf, salario) {
     override fun calculoAuxilio(): Double = salario*0.4
 }
