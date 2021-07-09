@@ -59,7 +59,7 @@ fun main() {
 }
 ```
 
-### Classes abertas e herança
+### Herança
 No Kotlin, para que uma classe seja aberta, usamos a palavra reservada ```open```, o que facilita quando for trabalhar com **herança**, assim, a classe que irá herdar terá que manter seus atributos com ```overrode```.
 
 #### Classe mãe
@@ -71,6 +71,31 @@ open class Pessoa (open val nome:String,open val cpf:String)
 class Funcionario(override val nome:String, override val cpf:String): Pessoa(nome, cpf)
 ```
 Diferente de uma classe ```abstract``` que não instancia, sua dinamica é diferente. No lugar do **open**, segue o abstract.
+
+Quando usamos ```abstract``` há momentos que também precisamos usar o ```protected``` fazendo que as classes mãe e filhas consigam fazer uso do argumento.
+
+#### Classe mãe
+```
+abstract class Funcionario( nome:String, cpf:String, val salario:Double): Pessoa(nome, cpf){
+protected abstract fun calculoAuxilio():Double
+
+    override fun toString(): String = """
+        Nome: $nome
+        CPF: $cpf
+        Salário: $salario
+        Auxílio: ${calculoAuxilio()}
+        """.trimIndent()
+}
+```
+
+#### Classe filho
+```
+class Gerente(nome: String, cpf: String, salario: Double) : Funcionario(nome, cpf, salario) {
+    override fun calculoAuxilio(): Double = salario*0.4
+}
+```
+### Polimorfismo 
+
 ## Fontes
 - [AndroidStudioOnline](https://play.kotlinlang.org/#eyJ2ZXJzaW9uIjoiMS41LjIwIiwicGxhdGZvcm0iOiJqYXZhIiwiYXJncyI6IiIsImpzQ29kZSI6IiIsIm5vbmVNYXJrZXJzIjp0cnVlLCJ0aGVtZSI6ImlkZWEiLCJjb2RlIjoiLyoqXG4gKiBZb3UgY2FuIGVkaXQsIHJ1biwgYW5kIHNoYXJlIHRoaXMgY29kZS4gXG4gKiBwbGF5LmtvdGxpbmxhbmcub3JnIFxuICovXG5cbmZ1biBtYWluKCkge1xuICAgIHByaW50bG4oXCJIZWxsbywgd29ybGQhISFcIilcbn0ifQ==)
 
