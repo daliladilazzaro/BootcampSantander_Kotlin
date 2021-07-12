@@ -30,13 +30,15 @@ inner class Endereco {
 Como vimos no exemplo que para a variável se tornal imutável utilizar **val**, podemo usar também ```private set``` abaixo da declaração de variáveis.   
 
 ### Membros de uma classe
-Os membros de uma classe são ***construtor primário ou secundário*** como ``` constructor()```, ***propriedades*** como ``` var nome:String="Lila"```, e até uma função dentro de uma função como ```fun pessoaInfo()= println("$nome e $cpf")``` .
+Os membros de uma classe são ***construtor primário ou secundário*** como ``` constructor()```, ***propriedades*** como ``` var nome:String="Lila"```, e até uma função dentro de uma função como ```fun pessoaInfo()= println("$nome e $cpf")``` . 
 
 As funções trabalham dentro da classe que abstrai algo do "mundo real", as funções permitem os objetos terem comportamentos, e as propriedades permitem terem um estado para quando instanciar ele tem a variavel no caso do exemplo acima "lila" que possui um comportamento que trás as informações dele. Esses são os membros de uma classe. 
 
 ### Tipo de Class
-- O ***Data Class*** é uma classe que espera dados, ter informações para seguir a longo da aplicação. 
-- O ***Enum Class*** é uma classe com opção de termos um construtor primário a sua propriedade, com objetos e instâncias da própria classe que podem já ser declaradas, destinada para tipos dentro de uma função, por exemplo, para uma classe Cliente, existem dois parametros Pessoa Física e Juridica, ao invés de fazer apenas uma variavel destinada para isso, o que pode ocorrer muitas vezes erro em digitação, já temos nossos enuns que permite já sigras prontas para escolher. Permitindo também ```companion object``` que nos da a opção para funções estáticas, ou seja, via classe, e não via instância do objeto. 
+- O ***Data Class*** é uma classe que espera dados, ter informações para seguir a longo da aplicação. O Data class pode implementar interface e com o uso de copy pode-se obter uma nova instancia e então alterar nessa instancia o estado do objeto
+- O ***Enum Class*** é uma classe com opção de termos um construtor primário a sua propriedade, com objetos e instâncias da própria classe que podem já ser declaradas, destinada para tipos dentro de uma função, por exemplo, para uma classe Cliente, existem dois parametros Pessoa Física e Juridica, ao invés de fazer apenas uma variavel destinada para isso, o que pode ocorrer muitas vezes erro em digitação, já temos nossos enuns que permite já sigras prontas para escolher. Permitindo também ```companion object``` que nos da a opção para funções estáticas, ou seja, via classe, e não via instância do objeto. Assim como qualquer classe, uma enum pode ter construtor e propriedade.
+
+Sendo as classes um artefato que permite representar uma abstração do mundo real. Portanto, a maneira correta sobre uma explicação dos membros de uma classe é que elas possuem ***propriedades, construtores e funções de uma classe***. O Kotlin é uma liguaguem orientada a objetos, que utilizamos o paradigma orientado a objetos para definirmos classes, propriedades e métodos que representem uma situação real
 
 ### Alterar um tipo "Val"
 Como vimos, o tipo de variável ***val*** é imutável. Mas existe uma condição chamada **copy** que cria uma cópia de uma variável que contem ela, e pode ser alterada, conforme: 
@@ -60,7 +62,7 @@ fun main() {
 ```
 
 ### Herança
-No Kotlin, para que uma classe seja aberta, usamos a palavra reservada ```open```, o que facilita quando for trabalhar com **herança**, assim, a classe que irá herdar terá que manter seus atributos com ```overrode```.
+No Kotlin, para que uma classe seja aberta, usamos a palavra reservada ```open```, o que facilita quando for trabalhar com **herança**, assim, a classe que irá herdar terá que manter seus atributos com ```overrode```. Além da Herança ser um mecanismo que permite que características comuns a diversas classes sejam fatoradas em uma classe base, ou superclasse. A partir de uma classe base, outras classes podem ser especificadas. Além de que uma classe abstrata pode herdar de uma única outra classe abstrata e implementar várias interfaces. E uma classe base é a classe que concede as características e a sub-classe herda as características da classe base.
 
 #### Classe mãe
 ```Kotlin
@@ -95,7 +97,7 @@ class Gerente(nome: String, cpf: String, salario: Double) : Funcionario(nome, cp
 }
 ```
 ### Polimorfismo 
-Como não é possível herdar duas vezes, é onde entra o polimorfismo usando ```interface```, e toda **interface** é abstrata, não sendo necessário inclui-la. E também não há necessidade em informar "()" pois ela não precisa de construtor, ou de instânciar.
+Como não é possível herdar duas vezes, é onde entra o polimorfismo usando ```interface```, e toda **interface** é abstrata, não sendo necessário inclui-la. E também não há necessidade em informar "()" pois ela não precisa de construtor, ou de instânciar. Em programação orientada a objetos, polimorfismo é o princípio pelo qual duas ou mais classes derivadas da mesma superclasse podem invocar métodos que têm a mesma assinatura, mas comportamentos distintos
 
 #### Classe com interface
 ```kotlin
@@ -103,6 +105,7 @@ interface Login {
     fun login(): Boolean
 }
 ```
+Uma Interface pode extender de outras interfaces.
 
 #### Classe herdada
 ```kotlin
