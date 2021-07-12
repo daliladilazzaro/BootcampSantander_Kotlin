@@ -121,6 +121,24 @@ class Cliente(nome: String, cpf: String, val clienteEnum: ClienteEnum, val senha
 }
 ```
 
+## Sobre a Arquitetura
+
+- O Google Play Instant, permite que aplicativos e jogos nativos sejam iniciados em dispositivos com Android 5.0 (API de nível 21) ou superior sem serem instalados.
+
+- Sobre a segurança do sistemas e o Armazenamento de dados, por padrão, os arquivos criados no armazenamento interno podem ser acessados apenas pelo seu app. O Android implementa essa proteção e é suficiente para a maioria dos aplicativos.
+
+- As camadas da arquitetura android estão relacionada às Estrutura da Java API.
+
+- As plataformas Android contém camada mais próxima dos desenvolvedores é a camada de Aplicação
+
+- A camada mais próxima dos desenvolvedores de aplicativos é a camada dos Aplicativos do sistema
+
+- As DSUs dependem do recurso de partição dinâmica do Android e exigem que as GSIs sejam assinadas pelo Google ou pelos seus OEMs como uma imagem de sistema confiável.
+
+- As atualizações dinâmicas do sistema (DSU)  são um recurso do sistema lançado no Android 10.
+
+- A imagem genérica do sistema (GSI) é uma implementação de Android puro e pode ser executada em vários dispositivos Android.
+
 ## Fontes
 - [AndroidStudioOnline](https://play.kotlinlang.org/#eyJ2ZXJzaW9uIjoiMS41LjIwIiwicGxhdGZvcm0iOiJqYXZhIiwiYXJncyI6IiIsImpzQ29kZSI6IiIsIm5vbmVNYXJrZXJzIjp0cnVlLCJ0aGVtZSI6ImlkZWEiLCJjb2RlIjoiLyoqXG4gKiBZb3UgY2FuIGVkaXQsIHJ1biwgYW5kIHNoYXJlIHRoaXMgY29kZS4gXG4gKiBwbGF5LmtvdGxpbmxhbmcub3JnIFxuICovXG5cbmZ1biBtYWluKCkge1xuICAgIHByaW50bG4oXCJIZWxsbywgd29ybGQhISFcIilcbn0ifQ==)
 
