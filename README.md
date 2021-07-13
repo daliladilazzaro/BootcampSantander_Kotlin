@@ -139,6 +139,67 @@ class Cliente(nome: String, cpf: String, val clienteEnum: ClienteEnum, val senha
 
 - A imagem genérica do sistema (GSI) é uma implementação de Android puro e pode ser executada em vários dispositivos Android.
 
+## Collections
+O Kotlin como outras linguagens, também faz uso de collections, como list, set, e map.
+
+#### List
+``` Kotlin
+    val func = Funcionario("Carla", 1800.00, "PJ")
+    val func1 = Funcionario("Carlos", 2000.00, "CLT")
+    val func2 = Funcionario("Carmelia", 1500.00, "CLT")
+
+    val funcinarios= listOf(func, func1, func2)
+
+    funcinarios.forEach { println(it) }
+
+    println("-------------------------")
+    println(funcinarios.find { it.nome == "Carmelia" })
+
+    println("-------------------------")
+    funcinarios.sortedBy { it.salario }.forEach{println(it)}
+
+    println("-------------------------")
+    funcinarios.groupBy { it.tipo }.forEach{println(it)}
+    
+``` 
+
+#### Set
+``` Kotlin
+    val func = Funcionario("Carla", 1800.00, "PJ")
+    val func1 = Funcionario("Carlos", 2000.00, "CLT")
+    val func2 = Funcionario("Carmelia", 1500.00, "CLT")
+
+    val funcion1 = setOf(func, func1)
+    val funcion2= setOf(func2)
+
+    val resUniao = funcion1.union(funcion2)
+    resUniao.forEach{println(it)}
+
+    println("-------------------------")
+
+    val funcion3 = setOf(func, func1, func2)
+    val resSubtract = funcion3.subtract(funcion2)
+    resSubtract.forEach{println(it)}
+
+    println("-------------------------")
+
+
+    val resIntersect= funcion3.intersect(funcion2)
+    resIntersect.forEach{println(it)}
+```
+#### Map
+``` Kotlin
+val pair: Pair<String, Double> = Pair("Stephan", 4500.00)
+    val map1 = mapOf(pair)
+
+    map1.forEach { (k, v) -> println("Chave: $k = Valor: $v") }
+
+    println("--------------------------")
+    val map2 = mapOf("Damon" to 5500.00, "Elena" to 7800.00)
+    map2.forEach { (k, v) -> println("Chave: $k = Valor: $v") }
+```
+
+
 ## Fontes
 - [AndroidStudioOnline](https://play.kotlinlang.org/#eyJ2ZXJzaW9uIjoiMS41LjIwIiwicGxhdGZvcm0iOiJqYXZhIiwiYXJncyI6IiIsImpzQ29kZSI6IiIsIm5vbmVNYXJrZXJzIjp0cnVlLCJ0aGVtZSI6ImlkZWEiLCJjb2RlIjoiLyoqXG4gKiBZb3UgY2FuIGVkaXQsIHJ1biwgYW5kIHNoYXJlIHRoaXMgY29kZS4gXG4gKiBwbGF5LmtvdGxpbmxhbmcub3JnIFxuICovXG5cbmZ1biBtYWluKCkge1xuICAgIHByaW50bG4oXCJIZWxsbywgd29ybGQhISFcIilcbn0ifQ==)
 - [GoogleDeveloper](https://developers.google.com/android/play-protect/starting-a-vdp)
