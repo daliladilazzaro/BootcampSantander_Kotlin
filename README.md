@@ -221,12 +221,14 @@ Removendo
 
 
 ## Fontes
-- [AndroidStudioOnline](https://play.kotlinlang.org/#eyJ2ZXJzaW9uIjoiMS41LjIwIiwicGxhdGZvcm0iOiJqYXZhIiwiYXJncyI6IiIsImpzQ29kZSI6IiIsIm5vbmVNYXJrZXJzIjp0cnVlLCJ0aGVtZSI6ImlkZWEiLCJjb2RlIjoiLyoqXG4gKiBZb3UgY2FuIGVkaXQsIHJ1biwgYW5kIHNoYXJlIHRoaXMgY29kZS4gXG4gKiBwbGF5LmtvdGxpbmxhbmcub3JnIFxuICovXG5cbmZ1biBtYWluKCkge1xuICAgIHByaW50bG4oXCJIZWxsbywgd29ybGQhISFcIilcbn0ifQ==)
+- [KotlinLang](https://play.kotlinlang.org/)
 - [GoogleDeveloper](https://developers.google.com/android/play-protect/starting-a-vdp)
 - [AndroidDeveloper](https://developer.android.com/studio/preview)
 - [AndroidDeveloper](https://developer.android.com/security)
 - [AndroidDeveloper](https://developer.android.com/platform/technology/app-bundle)
 - [DigitalInnovationOne](https://web.digitalinnovation.one/track/santander-mobile-developer?tab=path)
+- [GitJether](https://github.com/jether2011/digitalinnovation)
+- [Kotlin]([DigitalInnovationOne](https://web.digitalinnovation.one/track/santander-mobile-developer?tab=path))
 
 ## Authors 👩‍💻💖
 
