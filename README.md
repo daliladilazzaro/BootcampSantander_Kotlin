@@ -198,6 +198,26 @@ val pair: Pair<String, Double> = Pair("Stephan", 4500.00)
     val map2 = mapOf("Damon" to 5500.00, "Elena" to 7800.00)
     map2.forEach { (k, v) -> println("Chave: $k = Valor: $v") }
 ```
+Além também, de conter as listas multáveis, aquelas que podemos alterar depois de iniciarmos.
+
+#### MultableListOf
+Adicionando
+``` Kotlin
+    val func = Funcionario("Carla", 1800.00, "PJ")
+    val func1 = Funcionario("Carlos", 2000.00, "CLT")
+    val func2 = Funcionario("Carmelia", 1500.00, "CLT")
+
+    val funcionarios = mutableListOf(func, func1)
+    funcionarios.forEach{println(it)}
+
+    funcionarios.add(func2)
+    funcionarios.forEach{println(it)} 
+```
+Removendo
+``` Kotlin
+    funcionarios.remove(func)
+    funcionarios.forEach{println(it)}
+```
 
 
 ## Fontes
