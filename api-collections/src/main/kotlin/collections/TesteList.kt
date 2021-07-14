@@ -1,7 +1,7 @@
 package collections
 
 fun main() {
-val func = Funcionario("Carla", 1800.00, "PJ")
+    val func = Funcionario("Carla", 1800.00, "PJ")
     val func1 = Funcionario("Carlos", 2000.00, "CLT")
     val func2 = Funcionario("Carmelia", 1500.00, "CLT")
 
