@@ -219,7 +219,15 @@ Removendo
     funcionarios.forEach{println(it)}
 ```
 ## Exceptions no Android Studio
-Log.e(error) é uma alternativa válida para a prevenção/tratamento de exceptions na aplicação. Flavors não é uma ferramenta de debug do android studio. Depuração USB/USB debbuging nos permite executar o debug em um aparelho físico conectado ao computador. A ferramenta de debug mais adequada para identificar uma view que não está sendo exibida é a layout inspector. O comando correto para adicionar um log de erro com a tag “Error/Button” e a mensagem “erro ao clicar no botão" é Log.e( “Error/Button”,“erro ao clicar no botão"). A funcionalidade "espaço de cores” do modo desenvolvedor serve para simular o que um usuário com um determinado tipo de daltonismo vê ao interagir com o sistema Android. A diferença entre os comandos Log.d(String, String) e Log.v(String, String) é o primeiro (Log.d) corresponde a um log de debug (depuração) e o segundo se refere a um log detalhado que exibe todas as mensagens de registro (verbose).
+- Log.e(error) é uma alternativa válida para a prevenção/tratamento de exceptions na aplicação. 
+- Flavors não é uma ferramenta de debug do android studio. 
+- Depuração USB/USB debbuging nos permite executar o debug em um aparelho físico conectado ao computador. 
+- A ferramenta de debug mais adequada para identificar uma view que não está sendo exibida é a layout inspector. 
+- O comando correto para adicionar um log de erro com a tag “Error/Button” e a mensagem “erro ao clicar no botão" é Log.e( “Error/Button”,“erro ao clicar no botão"). 
+- A funcionalidade "espaço de cores” do modo desenvolvedor serve para simular o que um usuário com um determinado tipo de daltonismo vê ao interagir com o sistema Android.
+- A diferença entre os comandos Log.d(String, String) e Log.v(String, String) é o primeiro (Log.d) corresponde a um log de debug (depuração) e o segundo se refere a um log detalhado que exibe todas as mensagens de registro (verbose). 
+- NullPointerException é uma exception comum em java pode ser prevenida em Kotlin pelo uso do null check. 
+- O comando Log.w(String, String) exibe um log de aviso (warning)
 
 ## Fontes
 - [KotlinLang](https://play.kotlinlang.org/)
