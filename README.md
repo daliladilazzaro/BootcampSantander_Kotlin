@@ -229,6 +229,26 @@ Removendo
 - NullPointerException é uma exception comum em java pode ser prevenida em Kotlin pelo uso do null check. 
 - O comando Log.w(String, String) exibe um log de aviso (warning)
 
+## Salvar informações no Banco de Dados
+- A função do onUpgrade dentro do helper é validar se se a estrutura interna do seu banco de dados está atualizado e caso não esteja atualiza-lo.
+- A vantagem de usar o SQLLite para armazenar os dados no Android diferente de outras maneiras é para poder otimizar as buscas de dados de maneira mais eficiente e rápida.
+- Para montar um filtro em uma tabela de carros, pela cor e placa do veículo e que retorne somente o modelo do veículo se usa: SELECT modelo FROM carros WHERE cor = $cor AND placa LIKE ‘%$placa%’
+- Ao criar um Helper para fazer o gerenciamento de chamadas de banco em nosso aplicativo, a função essencial ser implementada no helper é onCrate.
+- O banco de dados interno no Android serve para guardar persistir dados de maneira offline e poder consultar elas posteriormente.
+- Para centralizar as chamadas de banco em um objeto e uma instancia única, a melhor maneira de se fazer isso é usar o pattern Singleton e criar uma estrutura de object no kotlin.
+
+## Testes
+- Em alguns momentos necessitamos utilizar o Robolectric para obter o contexto da nossa aplicação. Elas são executados os testes unitários utilizando o Robolectric com JVM.
+- Para criação de um método para teste unitário, devemos utilizar a anotação @Test.
+- A ordem correta do fluxo de desenvolvimento com TDD é Testes falhar - Testes passar - Refatorar.
+- Os principais benefícios do TDD é o código será mais limpo e simples; A confiabilidade do código será maior; Favore o processo de documentação.
+- O momento no desenvolvimento de software deve ser feito a criação dos testes seguindo o TDD, antes de realizar qualquer implementação de código de projeto
+- O objeto mock/fake em testes serve para simular o comportamento de um objeto real.
+- TDD (test driven development): refere-se a uma técnica de programação cujo principal objetivo é escrever um código funcional limpo, a partir de um teste que tenha falhado.
+- Para uma boa organização do escopo de cada método de testes, seguimos uma estrutura lógica de: preparar o método com tudo que ele precisa para em seguida ser validado.
+- Para conseguirmos criar e executar testes unitários, devemos criá-los em um pacote especifico no pacote Test.
+- Para fazer a asserção de valores numéricos em testes unitários, utilizamos o método: assetEquals().
+
 ## Fontes
 - [KotlinLang](https://play.kotlinlang.org/)
 - [GoogleDeveloper](https://developers.google.com/android/play-protect/starting-a-vdp)
