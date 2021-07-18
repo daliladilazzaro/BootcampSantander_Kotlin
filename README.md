@@ -257,7 +257,7 @@ Removendo
 - [AndroidDeveloper](https://developer.android.com/platform/technology/app-bundle)
 - [DigitalInnovationOne](https://web.digitalinnovation.one/track/santander-mobile-developer?tab=path)
 - [GitJether](https://github.com/jether2011/digitalinnovation)
-- [Kotlin]([DigitalInnovationOne](https://web.digitalinnovation.one/track/santander-mobile-developer?tab=path))
+- [Kotlin](https://web.digitalinnovation.one/track/santander-mobile-developer?tab=path)
 
 ## Authors 👩‍💻💖
 
