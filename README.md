@@ -3,7 +3,17 @@
 ### Conceitos básicos do Kotlin
 
 - Para variáveis que podem ser alteradas em momentos futuros pode se usar: **var**. 
-- Para variáveis que **não** podem ser alteradas, a não ser que vá até a raiz: **val**
+- Para variáveis que **não** podem ser alteradas, a não ser que vá até a raiz: **val**.
+- Devido a ausência de clickListeners e TextListeners, o first run do app não permitiu com que o IMC fosse calculado.
+- Os seguintes tipos de layout organiza seus elementos baseado nos atributos orientation, gravity e layout_gravity é o Linear Layout.
+- O atributo que define se elementos de um LinearLayout serão organizados verticalmente ou horizontalmente e chamado de Orientation.
+- O cenário ideal para a utilização de um frameLayout é quando só há um elemento a ser exibido.
+- Toda view possui um método onClickListener associado.
+- build.gradle (module) dentro de dependencies{} é onde são declaradas as importações de bibliotecas nativas e externas do projeto.
+- Após o onDestroy() o ciclo de vida é finalizado.
+- Os seguintes métodos fazem parte do ciclo visível de uma Activity são OnCreate, OnStart, OnResume.
+- São atributos característicos do Relative Layout: Start_To_end_of,End_To_start_of,above, below.
+- Toolbar.xml não é um arquivo xml gerado junto com o projeto.
 
 ### Exemplo de função 
 ``` kotlin
