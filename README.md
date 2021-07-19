@@ -14,6 +14,16 @@
 - Os seguintes métodos fazem parte do ciclo visível de uma Activity são OnCreate, OnStart, OnResume.
 - São atributos característicos do Relative Layout: Start_To_end_of,End_To_start_of,above, below.
 - Toolbar.xml não é um arquivo xml gerado junto com o projeto.
+- A função do método commit no SharedPreferences é executar uma ação de confirmação de imediato bloqueando a thread atual.
+- O método da interface de menu de opções conseguimos obter o evento de click sobre os itens é o onOptionsItemSelected().
+- Por convenção, o arquivo de strings do módulo é onde devemos armazenar textos que serão utilizados em nossa aplicação Android.
+- É obrigatório passar no mínimo 1 parâmetro no método de abertura de uma nova Activity, que é o objeto Intent() com informações refente à nova atividade que será aberta.
+- RecyclerView é componente Android utilizamos para criar uma lista.
+- No pacote res é onde deve ser guardado os arquivos de recursos de um módulo.
+- AndroidManifest é o nome do arquivo onde registramos novas Activities em um módulo Android.
+- O método utilizamos para acessar valores guardados com tipo string no SharedPreferences é o getString().
+- Em componentes do projeto é onde podemos utilizar Styles em nosso projeto Android.
+- O método que utilizamos para iniciar uma Activity em um módulo Android é o startActivity().
 
 ### Exemplo de função 
 ``` kotlin
