@@ -24,6 +24,13 @@
 - O método utilizamos para acessar valores guardados com tipo string no SharedPreferences é o getString().
 - Em componentes do projeto é onde podemos utilizar Styles em nosso projeto Android.
 - O método que utilizamos para iniciar uma Activity em um módulo Android é o startActivity().
+- Mantem o valor da variável na viewmodel quando o celular é rotacionando.
+- Para inicializar uma variável com o LiveData com o valor “Init”, segue o comando: `var mContador = MutableLiveData<String>().apply { value = “Init” }`.
+- ViewModel é um componente e Arquitetura.
+- Uma ViewModel nos permitem modelar várias entidades a partir de um ou mais modelos em um único objeto.
+- Para estanciar uma Class ViewModel se faz com `viewModel = ViewModelProvider(this).get(MainViewModel::class.java)`
+- A função do meu Observer serve para notificar quando um objeto muda de estado.
+- Em um projeto, não precisa utilizar o ViewModel.
 
 ### Exemplo de função 
 ``` kotlin
@@ -141,7 +148,7 @@ class Cliente(nome: String, cpf: String, val clienteEnum: ClienteEnum, val senha
 }
 ```
 ## Ciclo de Vida
-Todo ciclo tem que ter um create, start, resume, pause, stop, e um destroy.
+Todo ciclo tem que ter um create, start, resume, pause, stop, e um destroy.  Sendo sua ordem do Ciclo de Vida na Inicialização: OnCreate - OnStart - OnResume, e para Finalizar: OnPause - OnDestroy - OnDestroy
 ``` kotlin
 override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
