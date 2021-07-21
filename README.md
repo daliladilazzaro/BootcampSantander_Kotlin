@@ -140,6 +140,34 @@ class Cliente(nome: String, cpf: String, val clienteEnum: ClienteEnum, val senha
         """.trimIndent()
 }
 ```
+## Ciclo de Vida
+Todo ciclo tem que ter um create, start, resume, pause, stop, e um destroy.
+``` kotlin
+override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+    }
+    
+override fun onStart() {
+        super.onStart()
+    }
+
+    override fun onResume() {
+        super.onResume()
+    }
+
+    override fun onPause() {
+        super.onPause()
+    }
+
+    override fun onStop() {
+        super.onStop()
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+    }
+```
 
 ## Sobre a Arquitetura
 
