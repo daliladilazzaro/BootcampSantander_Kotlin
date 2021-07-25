@@ -20,7 +20,7 @@ class NotesDatabaseHelper(context: Context):
     companion object{
         const val TABLE_NOTES: String = "Notes"
         const val TITLE_NOTES: String = "Title"
-        const val DESCRIPTION_NOTES: String = "Descripton"
+        const val DESCRIPTION_NOTES: String = "Description"
     }
 
 }

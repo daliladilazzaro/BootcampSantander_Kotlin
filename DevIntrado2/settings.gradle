@@ -1,0 +1,2 @@
+rootProject.name = "DevIntrado2"
+include ':app'

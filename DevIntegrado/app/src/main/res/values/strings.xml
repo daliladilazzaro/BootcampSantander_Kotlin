@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">DevIntegrado</string>
+    <string name="note_title_hint">título</string>
+    <string name="note_description_hint">descrição</string>
 </resources>
