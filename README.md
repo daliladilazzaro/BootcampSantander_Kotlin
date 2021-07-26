@@ -4,6 +4,7 @@
 
 - Para variáveis que podem ser alteradas em momentos futuros pode se usar: **var**. 
 - Para variáveis que **não** podem ser alteradas, a não ser que vá até a raiz: **val**.
+- Quando se prepara um layout e configura o tamanho da letra, pode-se usar o padrão **"dp"** ou **"sp"**. O ***sp*** é para quando o usuário aumentar a tela, ele se ajustar e aumentar junto com a tela. Para uma letra de tamanho fixo, onde o usuário aumente a tela, e ele permaneça o mesmo tamanho já definido, usar o ***dp***.
 - Devido a ausência de clickListeners e TextListeners, o first run do app não permitiu com que o IMC fosse calculado.
 - Os seguintes tipos de layout organiza seus elementos baseado nos atributos orientation, gravity e layout_gravity é o Linear Layout.
 - O atributo que define se elementos de um LinearLayout serão organizados verticalmente ou horizontalmente e chamado de Orientation.
