@@ -1,0 +1,13 @@
+package com.example.contatosbootcamp
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        //pedir a permissao do usuario pra usa os contatos dele
+    }
+}
