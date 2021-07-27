@@ -32,6 +32,16 @@
 - Para estanciar uma Class ViewModel se faz com `viewModel = ViewModelProvider(this).get(MainViewModel::class.java)`
 - A função do meu Observer serve para notificar quando um objeto muda de estado.
 - Em um projeto, não precisa utilizar o ViewModel.
+- É importante identificar o ContentProvider, pois o endereço de identificação possibilita a realização das operações definidas do ContentProvider.
+- o Content Provider é um provedor de conteúdo, onde permite compartilhar informações de uma aplicação com outras aplicações.
+- A função de uma Notification é ser uma mensagem que Android exibe fora da interface do app.
+- Afunção do LoaderManager é realizar as operações do Content Provider em segundo plano, para que não haja problemas de performance.
+- Um Retrofit serve para fornecer um padrão simples de implementação para o consumo de uma API.
+- A importância de um model para se trabalhar com uma API, é ser um objeto responsável pelo mapeamento do retorno da API.
+- A importância de se trabalhar com uma API é permite consumir os dados de uma conexão externa ao App.
+- A função do NotificationManager é ser um objeto que gerencia o disparo de notificações do App.
+- A importância de estender a classe FirebaseMessagingService é ser um serviço que permite o recebimento de notificações em segundo plano, ou com o App fechado.
+- Os benefícios do Content Provider é permite compartilhar dados de uma aplicação com outra de forma padronizada e para alterar algo, só é necessário a alteração no provider.
 
 ### Exemplo de função 
 ``` kotlin
