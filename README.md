@@ -67,6 +67,15 @@ inner class Endereco {
 ```
 Como vimos no exemplo que para a variável se tornal imutável utilizar **val**, podemo usar também ```private set``` abaixo da declaração de variáveis.   
 
+
+## Sobre as pastas e projetos
+### Location_05
+Projeto dedicado a utilização a mapas do google, api, geração de chave, e API do google.
+
+Exemplo do Emulador.
+![image](https://user-images.githubusercontent.com/62756757/127408298-1d7fc7fb-d3de-44ae-9114-ab316d06adbb.png)
+
+
 ### Membros de uma classe
 Os membros de uma classe são ***construtor primário ou secundário*** como ``` constructor()```, ***propriedades*** como ``` var nome:String="Lila"```, e até uma função dentro de uma função como ```fun pessoaInfo()= println("$nome e $cpf")``` . 
 
