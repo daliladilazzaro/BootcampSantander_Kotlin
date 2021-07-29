@@ -72,9 +72,12 @@ Como vimos no exemplo que para a variável se tornal imutável utilizar **val**,
 ### Location_05
 Projeto dedicado a utilização a mapas do google, api, geração de chave, e API do google.
 
-Exemplo do Emulador.
+Exemplo do Emulador, com a tela para teste da api, e com adição dos botões. 
 
 ![image](https://user-images.githubusercontent.com/62756757/127408408-1c8983dc-5f43-4619-9ebc-c2dc8df8614f.png)  ![image](https://user-images.githubusercontent.com/62756757/127417938-7e88f184-f386-4ba9-bd12-be8fdba3fd9f.png)
+
+Pedindo permissão do usuário para usar a localização.
+![image](https://user-images.githubusercontent.com/62756757/127419080-825b36bf-0887-4a3f-b69b-0751c943c894.png)
 
 
 
