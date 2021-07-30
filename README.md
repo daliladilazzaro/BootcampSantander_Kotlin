@@ -78,7 +78,7 @@ Exemplo do Emulador, com a tela para teste da api, e com adição dos botões.
 
 Pedindo permissão do usuário para usar a localização, com localização salva e com zoom, e com ```map.mapType=GoogleMap.MAP_TYPE_HYBRID``` e com informações da rua.
 
-![image](https://user-images.githubusercontent.com/62756757/127419080-825b36bf-0887-4a3f-b69b-0751c943c894.png) ![image](https://user-images.githubusercontent.com/62756757/127564429-871417a5-f19e-470d-8b9e-6f44f1992317.png) ![image](https://user-images.githubusercontent.com/62756757/127587443-131fc04a-c04c-4161-811e-fec21d319925.png)
+![image](https://user-images.githubusercontent.com/62756757/127419080-825b36bf-0887-4a3f-b69b-0751c943c894.png) ![image](https://user-images.githubusercontent.com/62756757/127564429-871417a5-f19e-470d-8b9e-6f44f1992317.png) ![image](https://user-images.githubusercontent.com/62756757/127587547-41e98980-0d92-447a-8fec-3061b7c208bd.png)
 
 
 
