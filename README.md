@@ -44,6 +44,15 @@
 - Os benefícios do Content Provider é permite compartilhar dados de uma aplicação com outra de forma padronizada e para alterar algo, só é necessário a alteração no provider.
 - Sobre imagens e fotos, podemos dizer que: As imagens vetorizadas possuem uma melhor definição final, independente de seu tamanho, pois utilizam vetores para a geração da imagem e que as imagens do tipo foto são formadas por "dot point" e podem perder qualidade de imagem de acordo com seu tamanho.
 - A ordem correta para o desenvolvimento de um app que utiliza câmera: 1. Detectar e acessar a câmera; 2. Criar uma classe de visualização; 3. Criar um layout de visualização; 4. Configurar listeners para a captura; 5. Capturar e salvar arquivos; 6. Liberar a câmera
+- Alternativa ao JobScheduler para aplicações que estão disponíveis para versões abaixo do Android Lollipop é o WorkManager e Firebase JobDispatcher.
+- AsyncTasks fornece uma maneira de executar serviços em segundo plano?
+- Uma PendingIntent é um tipo de Intent que descreve a ação que pode ser executada por aplicações externas como AppWidgetManager.
+- O comportamento do Broadcast Receiver é Pub/Sub.
+- O AlarmManager permite que você dispare intents/eventos em horários e/ou intervalos definidos.
+- É uma maneira performática de agendar uma tarefa de modo que ela execute de hora em hora apenas se o aparelho estiver com o Wifi conectado, utilizar JobScheduler com as parametrizações adequadas para garantir a execução da tarefa.
+- O Broadcast Receiver pode ser utilizado para acionar Services e executar tarefas mais longas.
+- O responsável por renderizar os quadros de um processo no Android é o Thread principal.
+- Sobre o ciclo de vida de um Service não está diretamente vinculado a UI (User Interface).
 
 ### Exemplo de função 
 ``` kotlin
