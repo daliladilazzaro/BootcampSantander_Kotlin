@@ -88,6 +88,10 @@ E após editar o código pra salvar a localização escolhida antes, útil para 
 
 ![image](https://user-images.githubusercontent.com/62756757/127713837-b31c50d6-ce90-44c2-afd4-4fde680c6f64.png)
 
+### FilmesFlix
+Tela carregando, e tela com imagens dos filmes
+![image](https://user-images.githubusercontent.com/62756757/127774680-cf9d6157-0411-4ccb-a23e-b8f51f6c0028.png) ![image](https://user-images.githubusercontent.com/62756757/127774711-b6059e52-dc6c-46a8-ad22-f6a05edb10da.png)
+
 
 ### Membros de uma classe
 Os membros de uma classe são ***construtor primário ou secundário*** como ``` constructor()```, ***propriedades*** como ``` var nome:String="Lila"```, e até uma função dentro de uma função como ```fun pessoaInfo()= println("$nome e $cpf")``` . 
