@@ -42,6 +42,8 @@
 - A função do NotificationManager é ser um objeto que gerencia o disparo de notificações do App.
 - A importância de estender a classe FirebaseMessagingService é ser um serviço que permite o recebimento de notificações em segundo plano, ou com o App fechado.
 - Os benefícios do Content Provider é permite compartilhar dados de uma aplicação com outra de forma padronizada e para alterar algo, só é necessário a alteração no provider.
+- Sobre imagens e fotos, podemos dizer que: As imagens vetorizadas possuem uma melhor definição final, independente de seu tamanho, pois utilizam vetores para a geração da imagem e que as imagens do tipo foto são formadas por "dot point" e podem perder qualidade de imagem de acordo com seu tamanho.
+- A ordem correta para o desenvolvimento de um app que utiliza câmera: 1. Detectar e acessar a câmera; 2. Criar uma classe de visualização; 3. Criar um layout de visualização; 4. Configurar listeners para a captura; 5. Capturar e salvar arquivos; 6. Liberar a câmera
 
 ### Exemplo de função 
 ``` kotlin
