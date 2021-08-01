@@ -91,7 +91,8 @@ E após editar o código pra salvar a localização escolhida antes, útil para 
 ### FilmesFlix
 Tela carregando, e tela com imagens dos filmes
 
-![image](https://user-images.githubusercontent.com/62756757/127774680-cf9d6157-0411-4ccb-a23e-b8f51f6c0028.png) ![image](https://user-images.githubusercontent.com/62756757/127776015-9dfb0418-91e9-4e6c-b915-865307a75ddb.png)
+ ![image](https://user-images.githubusercontent.com/62756757/127776015-9dfb0418-91e9-4e6c-b915-865307a75ddb.png)  ![image](https://user-images.githubusercontent.com/62756757/127776081-5d00b597-8102-4aaa-9524-e78aa243edef.png)
+
 
 ### Membros de uma classe
 Os membros de uma classe são ***construtor primário ou secundário*** como ``` constructor()```, ***propriedades*** como ``` var nome:String="Lila"```, e até uma função dentro de uma função como ```fun pessoaInfo()= println("$nome e $cpf")``` . 
