@@ -90,7 +90,8 @@ E após editar o código pra salvar a localização escolhida antes, útil para 
 
 ### FilmesFlix
 Tela carregando, e tela com imagens dos filmes
-![image](https://user-images.githubusercontent.com/62756757/127774680-cf9d6157-0411-4ccb-a23e-b8f51f6c0028.png) ![image](https://user-images.githubusercontent.com/62756757/127774711-b6059e52-dc6c-46a8-ad22-f6a05edb10da.png)
+
+![image](https://user-images.githubusercontent.com/62756757/127774680-cf9d6157-0411-4ccb-a23e-b8f51f6c0028.png) ![image](https://user-images.githubusercontent.com/62756757/127775975-013e1c02-4e04-44c3-a778-37423a92515b.png)
 
 
 ### Membros de uma classe
