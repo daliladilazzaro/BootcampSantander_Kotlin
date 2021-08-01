@@ -95,6 +95,12 @@ Tela carregando, e tela com imagens dos filmes
 
  ![image](https://user-images.githubusercontent.com/62756757/127776015-9dfb0418-91e9-4e6c-b915-865307a75ddb.png)  ![image](https://user-images.githubusercontent.com/62756757/127776081-5d00b597-8102-4aaa-9524-e78aa243edef.png)
 
+### android-bootcamp-drinkwater
+Projeto que mostra quantos copos de água tomou.
+
+![image](https://user-images.githubusercontent.com/62756757/127782810-6c2dcd9d-5797-4444-aca5-2acd9fafcaf3.png)  ![image](https://user-images.githubusercontent.com/62756757/127782833-718dba18-7155-4b41-990c-083096d7884e.png)
+
+
 
 ### Membros de uma classe
 Os membros de uma classe são ***construtor primário ou secundário*** como ``` constructor()```, ***propriedades*** como ``` var nome:String="Lila"```, e até uma função dentro de uma função como ```fun pessoaInfo()= println("$nome e $cpf")``` . 
