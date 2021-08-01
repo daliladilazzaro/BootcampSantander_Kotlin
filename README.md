@@ -217,20 +217,28 @@ override fun onStart() {
 ## Sobre a Arquitetura
 
 - O Google Play Instant, permite que aplicativos e jogos nativos sejam iniciados em dispositivos com Android 5.0 (API de nível 21) ou superior sem serem instalados.
-
 - Sobre a segurança do sistemas e o Armazenamento de dados, por padrão, os arquivos criados no armazenamento interno podem ser acessados apenas pelo seu app. O Android implementa essa proteção e é suficiente para a maioria dos aplicativos.
-
 - As camadas da arquitetura android estão relacionada às Estrutura da Java API.
-
 - As plataformas Android contém camada mais próxima dos desenvolvedores é a camada de Aplicação
-
 - A camada mais próxima dos desenvolvedores de aplicativos é a camada dos Aplicativos do sistema
-
 - As DSUs dependem do recurso de partição dinâmica do Android e exigem que as GSIs sejam assinadas pelo Google ou pelos seus OEMs como uma imagem de sistema confiável.
-
 - As atualizações dinâmicas do sistema (DSU)  são um recurso do sistema lançado no Android 10.
-
 - A imagem genérica do sistema (GSI) é uma implementação de Android puro e pode ser executada em vários dispositivos Android.
+
+## Arquiterura MVVM (Model-View-ViewModel)
+- ***Domain***: Modelos e regras de negócios.
+- ***Data***: Abstração para acessar o datasouce.
+- ***Usecases***: Transmite as ações do usuário.
+- ***App***: Irá conter as implementações das interfaces da camada de dados.
+- A responsabilidade do ViewModel é cuidar da lógica da regra de negócio.
+- A diferença entre liveData e mutableLiveData é que o mutableLiveData uma vez criado pode ter o valor alterado. Já o liveData não pode.
+- Por padrão, não há uma quantidade mínima de camadas no clean architecture.
+- No MVVM, a relação entre o repository e o data source é o repository irá usar o data source para acessar as fontes de dados locais e/ou web.
+- Os principais benefícios de usar o Clean architecture em conjunto com o MVVM são melhorias na separação de conceitos e testabilidade do código.
+- Nós usamos o repository para manipular as operações de dados.
+- O que poderá ocorrer com o meu app se eu passar como argumento de uma função uma activity e mudar a orientação da minha tela da vertical para a horizontal é que o app vai apresentar um erro pois ao mudar a orientação da tela, a activity é recriada e como o view model não deveria ter conhecimento sobre activites/fragments e suas views, irá ocorrer um erro.
+- Devemos utilizar o mutableLiveData para ser observado na view e assim que receber um resultado após executar uma tarefa assíncrona, atualizar os dados na tela.
+- A arquitetura que a google recomenda para criar novos apps android é o MVVM.
 
 ## Collections
 O Kotlin como outras linguagens, também faz uso de collections, como list, set, e map.
@@ -357,6 +365,8 @@ Removendo
 - [Bootcamp](https://drive.google.com/file/d/1AxY8iY361-KGAbRAYUwGHmIFJ_3R-qkZ/view)
 - [Bootcamp](https://drive.google.com/file/d/1_OkuSlVclCod24bcpKcmogbUxUmkG9kQ/view)
 - [Bootcamp](https://drive.google.com/file/d/1RpMwopH4AJ4mmzXHFko3hUP891uhorH9/view)
+- [Bootcamp](https://raw.githubusercontent.com/natanfelipe/FilmesFlixJson/master/moviesList)
+- [Bootcamp](https://github.com/natanfelipe/FilmesFlix/tree/codebase_inicial)
 
 ## Authors 👩‍💻💖
 
