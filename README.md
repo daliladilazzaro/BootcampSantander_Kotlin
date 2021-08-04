@@ -80,6 +80,16 @@ Como vimos no exemplo que para a variável se tornal imutável utilizar **val**,
 
 
 ## Sobre as pastas e projetos
+
+### ***PROJETO FINAL*** - ToDoList
+Aplicativo de lembrete de tarefas
+
+Tela inicial / Escolhendo data / Selecionando hora / Campos Preenchidos
+![image](https://user-images.githubusercontent.com/62756757/128266219-c94ee814-c911-43fe-be26-826dd29a5d4d.png)  ![image](https://user-images.githubusercontent.com/62756757/128266326-473bc17c-ac4e-4d31-9267-61400ad30541.png)  ![image](https://user-images.githubusercontent.com/62756757/128266396-e12a397b-57de-436f-85de-a74990a7cc2b.png)  ![image](https://user-images.githubusercontent.com/62756757/128267140-aa005b68-4b2e-4afb-92ed-028e8721219b.png)
+
+
+
+
 ### Location_05
 Projeto dedicado a utilização a mapas do google, api, geração de chave, e API do google.
 
